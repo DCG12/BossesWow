@@ -25,7 +25,7 @@ import com.example.user.bosseswow.databinding.LvWowRowBinding;
 public class MainActivityFragment extends Fragment {
 
     private FragmentMainBinding binding;
-    private ArrayAdapter<WOW> adapter;
+    private WOWAdapter adapter;
 
     public MainActivityFragment() {
     }
