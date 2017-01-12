@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import java.util.List;
 import android.databinding.DataBindingUtil;
+import com.bumptech.glide.Glide;
 
 import com.example.user.bosseswow.databinding.LvWowRowBinding;
 
