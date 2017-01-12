@@ -36,6 +36,7 @@ public class WOWAdapter extends ArrayAdapter<WOW> {
 
 
         binding.lvBossName.setText(wow.getName());
+
         binding.lvBossHealth.setText("vida: " + wow.getHealth());
 
 
