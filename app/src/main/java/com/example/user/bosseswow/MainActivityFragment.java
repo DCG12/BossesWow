@@ -1,10 +1,12 @@
 package com.example.user.bosseswow;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import java.util.ArrayList;
@@ -43,6 +45,16 @@ public class MainActivityFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         ListView lvWow = (ListView) view.findViewById(R.id.lvWow);
+
+        lvWow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                WOW wow = (WOW) adapterView.getItemAtPosition(i);
+
+                Intent intent = new Intent(getContext(), DetailActivity.class);
+            }
+        });
 
         return view;
     }
