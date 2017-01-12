@@ -47,6 +47,10 @@ public class APIWOW {
                 JSONObject object = jsonBoss.getJSONObject(i);
                 boss.setName(object.getString("name"));
                 boss.setHealth(object.getInt("health"));
+                boss.setLevel(object.getInt("level"));
+                boss.getHeroichealth(object.getInt("heroicHealth"));
+                boss.getHeroiclevel(object.getInt("heroicLevel"));
+                boss.getDescription(object.getString("description"));
                 bosses.add(boss);
             }
 

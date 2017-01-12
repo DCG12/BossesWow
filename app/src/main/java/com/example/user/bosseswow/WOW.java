@@ -19,7 +19,7 @@ public class WOW implements Serializable {
         this.name = name;
     }
 
-    public int getHeroiclevel() {
+    public int getHeroiclevel(int heroiclevel) {
         return heroiclevel;
     }
 
@@ -27,7 +27,7 @@ public class WOW implements Serializable {
         this.heroiclevel = heroiclevel;
     }
 
-    public int getHeroichealth() {
+    public int getHeroichealth(int heroichealth) {
         return heroichealth;
     }
 
@@ -35,7 +35,7 @@ public class WOW implements Serializable {
         this.heroichealth = heroichealth;
     }
 
-    public int getLevel() {
+    public int getLevel(int level) {
         return level;
     }
 
@@ -51,8 +51,8 @@ public class WOW implements Serializable {
         this.health = health;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescription(String description) {
+        return this.description;
     }
 
     public void setDescription(String description) {
