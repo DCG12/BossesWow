@@ -33,7 +33,7 @@
                 android:value="com.example.user.bosseswow.MainActivity" />
         </activity>
         <provider
-            android:name=".CardContentProvider"
+            android:name=".WOWContentProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false" />
     </application>
