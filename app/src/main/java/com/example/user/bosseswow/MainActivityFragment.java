@@ -19,6 +19,10 @@ import android.util.Log;
 import android.os.AsyncTask;
 import java.util.ArrayList;
 import android.databinding.DataBindingUtil;
+import android.net.Uri;
+import nl.littlerobots.cupboard.tools.provider.UriHelper;
+import static nl.qbusict.cupboard.CupboardFactory.cupboard;
+
 
 import com.example.user.bosseswow.databinding.FragmentDetailBinding;
 import com.example.user.bosseswow.databinding.FragmentMainBinding;
