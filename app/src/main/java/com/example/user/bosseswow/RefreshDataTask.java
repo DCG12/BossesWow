@@ -9,7 +9,7 @@ import android.util.Log;
 import com.alexvasilkov.events.Events;
 import java.util.ArrayList;
 
-public class RefreshDataTask {
+public class RefreshDataTask extends AsyncTask<Void, Void, Void>{
 
     private Context context;
 

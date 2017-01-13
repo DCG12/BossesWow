@@ -76,7 +76,8 @@ public class MainActivityFragment extends Fragment {
     }
 
     private void refresh() {
-        
+        RefreshDataTask task = new RefreshDataTask(getActivity().getApplicationContext());
+        task.execute();
     }
 
 
