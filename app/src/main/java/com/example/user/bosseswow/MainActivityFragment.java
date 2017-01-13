@@ -20,11 +20,13 @@ import android.os.AsyncTask;
 import java.util.ArrayList;
 import android.databinding.DataBindingUtil;
 
+import com.example.user.bosseswow.databinding.FragmentDetailBinding;
 import com.example.user.bosseswow.databinding.FragmentMainBinding;
 import com.example.user.bosseswow.databinding.LvWowRowBinding;
 
 
 public class MainActivityFragment extends Fragment {
+
 
     private FragmentMainBinding binding;
     private WOWAdapter adapter;

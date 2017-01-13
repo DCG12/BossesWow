@@ -64,5 +64,16 @@
         app:layout_constraintLeft_toLeftOf="@+id/lvHeroicHealth"
         app:layout_constraintTop_toBottomOf="@+id/lvHeroicHealth" />
 
+    <TextView
+        android:id="@+id/lvBossDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Text"
+        app:layout_constraintLeft_toLeftOf="@+id/lvHeroicLevel"
+        app:layout_constraintTop_toBottomOf="@+id/lvHeroicLevel" />
+
 </android.support.constraint.ConstraintLayout>
 </layout>
