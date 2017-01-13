@@ -42,19 +42,9 @@ public class MainActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-        ListView lvWow = (ListView) view.findViewById(R.id.lvWow);
-
-        lvWow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                WOW wow = (WOW) adapterView.getItemAtPosition(i);
-
-                Intent intent = new Intent(getContext(), DetailActivity.class);
-            }
-        });
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false);
+        View view = binding.getRoot();
 
         return view;
     }

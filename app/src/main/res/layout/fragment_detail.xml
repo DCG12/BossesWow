@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.user.bosseswow.MainActivity"
     tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:id="@+id/lvBossName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Golem Arcano"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvBossHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3000"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lvBossName"
+        app:layout_constraintTop_toBottomOf="@+id/lvBossName" />
+
+    <TextView
+        android:id="@+id/lvBossLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="70"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lvBossHealth"
+        app:layout_constraintTop_toBottomOf="@+id/lvBossHealth" />
+
+    <TextView
+        android:id="@+id/lvHeroicHealth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="9521"
+        app:layout_constraintLeft_toLeftOf="@+id/lvBossLevel"
+        app:layout_constraintTop_toBottomOf="@+id/lvBossLevel" />
+
+    <TextView
+        android:id="@+id/lvHeroicLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="50"
+        app:layout_constraintLeft_toLeftOf="@+id/lvHeroicHealth"
+        app:layout_constraintTop_toBottomOf="@+id/lvHeroicHealth" />
+
 </android.support.constraint.ConstraintLayout>
+</layout>
