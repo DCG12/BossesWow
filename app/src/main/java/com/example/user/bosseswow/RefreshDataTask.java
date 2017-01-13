@@ -44,7 +44,6 @@ public class RefreshDataTask extends AsyncTask<Void, Void, Void>{
         super.onPostExecute(aVoid);
 
         Dialog dialog = null;
-        dialog.dismiss();
     }
 
     public Context getContext() {
